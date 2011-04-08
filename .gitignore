@@ -1,0 +1,9 @@
+# Mac OS X Finder and whatnot
+.DS_Store
+
+# automatic backup files
+*.swp
+*~
+
+# No tmp dir
+tmp/
