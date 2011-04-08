@@ -1,0 +1,56 @@
+ALMIDON BLOG
+
+I    Introduction
+
+This is a example of how almidon can be used to make a blog, feel free to improve it but do not forget send me a copy please :D.
+
+II   Content
+
+- almidon_blog.sql
+- classes
+  - blog.class.php
+  - blog.config.php
+- phps
+  - comments.php
+  - common.inc.php
+  - entry.php
+  - index.php
+  - print.php
+  - record.php
+  - css/
+  - img/
+  - js/
+- README.txt
+- tpls
+  - bottom.tpl
+  - comments.frm.tpl
+  - comments.tpl
+  - index.tpl
+  - print.tpl
+
+III  Requirements
+
+1. Apache 2.x + (with Rewrite module actived)
+2. Smarty 2.x +
+3. PostgreSQL 8.x +
+
+IV   Installation
+
+1. Run the SQL script *almidon_blog.sql*
+
+2. Move the *phps* directory content to a apache public directory, if you already have a web site in that directory I recommend you to put it all together in a folder, for example blog.
+
+3. Move the *tpls* directory content to the existent template dir, where Smarty has access, again I recommend if you have other TPLs or template files put it all together in a folder, and put the same name as the previous name you used in the previous point.
+
+4. Move the content of *classes* directory of this project to the classes of the website. 
+
+5. Edit classes/tables.class.php and after the last line put
+
+include 'blog.class.php';
+
+6. Edit classes/config.php and after the last line put
+
+include 'blog.config.php';
+
+ln -s ../almidon_blog/tpls path-to-tpl-dir/blog
+ln -s ../almidon_blog/phps path-to-public-dir/blog
