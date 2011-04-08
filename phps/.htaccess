@@ -1,0 +1,31 @@
+RewriteEngine On
+# Enable only if the blogs are in a folder inside a domain
+#RewriteBase /blogs
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^enviar/(.*)$ send.php?idab_entry=$1 [QSA,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^imprimir/(.*)$ print.php?idab_entry=$1 [QSA,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^entrada/(.*)/(.+)$ entry.php?idab_entry=$1 [QSA,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^entrada/(.*)$ entry.php?idab_entry=$1 [QSA,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^pagina/(.*)$ index.php?idab_page=$1 [QSA,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^archivo/(.+)/(.+)$ record.php?archivo=1&y=$1&m=$2 [QSA,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^archivo/(.+)$ record.php?archivo=1&y=$1 [QSA,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !(/imprimir|/entrada)(.*)$
+RewriteRule ^(.+)/(.+)$ entry.php?idab_entry=0 [QSA,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [QSA,L]

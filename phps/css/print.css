@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/* CSS Document
+ * Autor: Christian Torres
+ * Email: christian@guegue.net
+ */
+
+body,html,h1,h2,h3,h4,h5,p,blockquote,ul { margin:0; padding:0; }
+ul { margin-left:18px; }
+body { padding:20px; padding-top:10px; padding-bottom:10px; font-family:Arial, Helvetica, sans-serif; font-size:14px; }
+#wrapper { width:652px; }
+
+#body .headline h1 { font-weight:normal; font-size:32px; color:#000; }
+#body .headline h1 { font-family:  Georgia, "Times New Roman", Times, serif; }
+#body .headline { margin-bottom:10px; }
+
+a { text-decoration:none; color:#0071ae; }
+a:hover { text-decoration:underline; }
+
+#footer { margin-top:10px; padding-top:10px; border-top:1px solid #333; font-size:12px; color:#555; text-align:right; }
+
+#content { border-top:1px solid #333; padding-top:15px; }
+
+#content .new_pic { width:480px; margin-left:auto; margin-right:auto; }
+#content .new_pic .new_pic_note { padding-top: 2px; padding-right: 4px; padding-bottom: 2px; padding-left: 4px; color: #555; font-size:12px; }
+
+.details { font-size:12px; }

@@ -1,0 +1,19 @@
+/* CSS Document */
+
+.capa-botonbuscar{width:62px;height:18px;background:#0071ae url(../imagenes/backg-boton-buscar.png) right top no-repeat;color:#fff;font-size:14px;margin-top:1px;padding-right:5px;padding-top:2px;}
+.noticia .texto{width:446px;padding-left:10px;padding-right:50px;}
+.centro{width:1000px;border-left:1px solid #cecece;border-right:1px solid #cecece;background:url(../imagenes/backg-centro.png) repeat-y top center #fff;}
+.centro .izquierda{width:655px;margin-left:7px;margin-right:10px;}
+.seccion{width:180px;margin-left:10px;margin-right:10px;color:#fff;font-size:11px;padding-top:5px;}
+.seccion1{width:180px;margin-left:10px;margin-right:10px;color:#fff;font-size:11px;padding-top:27px;}
+.centro .derecha{width:280px;margin-left:15px;margin-right:15px;}
+.noticia-contenido .texto{width:307px;padding-left:10px;}
+.noticia-contenido .texto .resumen{font-size:12px;line-height:16px;padding-top:10px;}
+.separacion{width:155px;}
+.clasificacion .texto{padding-top:4px;font-size:10px;width:60px;}
+.noticia .clasificacion{width:358px;padding-left:10px;}
+#todo-contenido{width:1000px;}
+.comentario .arriba .texto{color:#73736e;font-size:10px;padding-left:5px;width:226px;}
+.dia{width:20px;height:15px;font-size:11px;color:#1272ad;margin:5px 9px;}
+.seleccion{background-color:#f0f3f8;margin-top:10px;margin-bottom:10px;height:20px;padding-top:5px;padding-bottom:5px;padding-left:5px;}
+.boton{font-size:10px;background-color:#5c80b3;border:1px solid #fff;padding-left:2px;height:15px;width:58px;padding-top:3px;}

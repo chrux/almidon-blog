@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* CSS Document */
+
+#comment_norms, .edit-comentario, #comentarios h2, #comentarios_loading h3, #comentarios ul li { font-family:Arial, Helvetica, sans-serif; }
+
+/* Comentarios */
+#comentarios_loading { padding-top:20px; padding-bottom:20px; display:none; }
+#comentarios_loading h3 { margin-top:10px; font-weight:normal; text-transform:uppercase; font-size:12px; }
+#comentarios h2 { color:#2193c6; text-align:left; font-weight:normal; font-size:16px; }
+#comentarios ul { text-align:left; }
+#comentarios ul li .autor { color:#0071ae; font-weight:bold; font-style:normal; font-size:12px; font-family:  Georgia, "Times New Roman", Times, serif; }   
+#comentarios ul li { border-top:1px solid #ccc; padding-top:4px; padding-left:10px; padding-right:10px; margin-top:10px; }
+#comentarios ul { list-style:none; padding-left:4px; padding-right:4px; padding-bottom:8px; font-size:13px; }
+.num_com { color:#905417; font-weight:bold; }
+.info_com { margin-bottom:6px; }
+.date_com { font-size:11px; font-weight:normal; color:#999999; }
+#pages,#pages_2 { padding-left:6px; padding-right:6px; padding-top:6px; display:block; font-size:11px; margin-top:4px; border-top:1px solid #ccc; }
+#pages .left, #pages_2 .left { padding:0px; margin:0px; float:left; }
+#pages ul.right, #pages_2 ul.right { float:right; padding:0px; margin:0px; display:block; border:0px; }
+#pages ul.right li, #pages_2 ul.right li { border:0px; padding:0px; margin:0px; float:left; margin-left:4px; }
+#pages_2 { margin-bottom:16px; }
+#pages a, #pages_2 a { font-size:11px; color:#666; text-decoration:none; }
+#pages a:hover, #pages_2 a:hover { text-decoration:underline; }
+hr { border:none; border-bottom:1px solid #CCC; height:1; margin:0; padding:0; margin-top:3px; margin-bottom:5px; }
+
+/* Formulario  de Comentario */
+#tucomentario { background-color:#f8f8f8; border:1px solid #d7d7d7; padding:10px; width:410px; float:left; }
+.columnas-comentario-izq { width:250px; }
+.columnas-comentario-der { width:140px; }
+.controls { text-align:right; border-top:1px solid #CCC; margin-top:8px; padding-top:8px; }
+#comment_norms { text-align:left; float:right; width:200px; font-size:11px; color:#888; line-height:115%; padding:4px; }
+.codigo { padding-top:8px; }
+.codigo img { margin-bottom:8px; }
+.codigo a { float:right; }
+.columnas-comentario-der .campo-texto { width:110px; float:left; }
+
+.comentario-nota { border-top:1px dotted #bababa; border-bottom:1px dotted #bababa; padding-bottom:2px; }
+.menu-comentarios { font-size:12px; color:#787878; padding-left:15px; padding-top:3px; }
+.menu-comentarios a { color:#787878; }
+.comentarios1 { font-size:18px; }
+.comentarios1 a { color:#0071ae; text-decoration:underline; }
+.titulo-comentario { font-size:16px; margin-bottom:5px; }
+.edit-comentario { border:1px solid #9ab1c8; height:110px; width:99%; padding:2px; font-size:12px; }
+.columnas-comentario { padding:0; font-size:12px; }
+.campo-texto { width:210px; font-size:12px; padding:2px; border:1px solid #dedede; width:97%; }
+.etiqueta { padding-top:10px; margin-bottom:2px; }
+.etiqueta1 { padding-top:5px; font-size:11px; text-align:right; }
+.normas { padding-top:30px; font-size:12px; }
+.norma { padding-top:15px; }
+.requerido { color:#ed1c24; }
