@@ -13,11 +13,10 @@
  * @package almidon_blog
  * @version 1.0
  */
-
 # Constants for URL of Blog
-define ('AB_URL', 'http://' . DOMAIN . '/blog');
-# TPLs directory
-define ('AB_TPL_DIR', 'blog/');
+define ('AB_URL', 'http://' . DOMAIN);
+# TPLs directory, if it is not in the root
+define ('AB_TPL_DIR', '');
 # amount of entries by page
 define ('AB_ENTRIES_PAGE', 8);
 # Amount of comments by page
@@ -25,7 +24,7 @@ define ('AB_COMMENT_PAGE' , 5);
 # Blog logo
 define ('AB_ABOUT_PIC','');
 # Blnfo
-define ('AB_ABOUT','Descripci√n del Blog');
+define ('AB_ABOUT','Descripci√≥n del Blog');
 # Web Site Title
 define ('AB_TITLE_WEBSITE','bloggin&#8217;  &#8226; almidon');
 # Web Site SubTitle

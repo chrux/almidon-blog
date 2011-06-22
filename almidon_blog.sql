@@ -344,6 +344,49 @@ ALTER SEQUENCE ab_video_idab_video_seq OWNED BY ab_video.idab_video;
 
 SELECT pg_catalog.setval('ab_video_idab_video_seq', 1, false);
 
+--
+-- Name: ab_audio; Type: TABLE; Schema: public; Tablespace: 
+--
+
+CREATE TABLE ab_audio (
+    idab_audio integer NOT NULL,
+    ab_audio character varying(200),
+    file character varying(500),
+    credit character varying(500),
+    creation timestamp without time zone DEFAULT now()
+);
+
+
+--
+-- Name: ab_audio_idab_audio_seq; Type: SEQUENCE; Schema: public;
+--
+
+CREATE SEQUENCE ab_audio_idab_audio_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MAXVALUE
+    NO MINVALUE
+    CACHE 1;
+
+--
+-- Name: ab_audio_idab_audio_seq; Type: SEQUENCE OWNED BY; Schema: public;
+--
+
+ALTER SEQUENCE ab_audio_idab_audio_seq OWNED BY ab_audio.idab_audio;
+
+
+--
+-- Name: ab_audio_idab_audio_seq; Type: SEQUENCE SET; Schema: public;
+--
+
+SELECT pg_catalog.setval('ab_audio_idab_audio_seq', 1, false);
+
+
+--
+-- Name: idab_audio; Type: DEFAULT; Schema: public;
+--
+
+ALTER TABLE ab_audio ALTER COLUMN idab_audio SET DEFAULT nextval('ab_audio_idab_audio_seq'::regclass);
 
 --
 -- Name: idab_author; Type: DEFAULT; Schema: public;

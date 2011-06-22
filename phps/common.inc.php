@@ -1,9 +1,13 @@
 <?php
+// If the PATH is different to DOCUMENT ROOT
 //define ('PATH', dirname(__FILE__));
-define ('PATH',$_SERVER['DOCUMENT_ROOT']);
-require_once PATH . '/../classes/app.class.php';
+// If we have another path, example '/www/absolute/path'
+//define ('PATH', '/absolute-path');
+// If we use document root
+define ('PATH', $_SERVER['DOCUMENT_ROOT'] . '/..');
+define ('APP_CLASS', PATH . '/classes/app.class.php');
 
-define ('APP_CLASS',$_SERVER['DOCUMENT_ROOT'] . '/../classes/app.class.php');
+require_once APP_CLASS;
 
 /**
  * Getting the current URL
